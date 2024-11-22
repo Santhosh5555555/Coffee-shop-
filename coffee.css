@@ -1,0 +1,491 @@
+*{
+    padding :0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:monospace;
+}
+.desk-container{
+    background:brown;
+    display :flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+.desk-site{
+    position:sticky ;
+    top:0px;
+    z-index:1;
+}
+.desk-container .desk-title .desk-subtitle{
+    list-style:none;
+    text-decoration:none;
+    color:white;
+    font-size:30px;
+}
+.desk-menu .desk-list{
+    display :flex;
+    flex-direction:row;
+    gap:10px;
+    font-size:24px;
+}
+.desk-menu .desk-list  .menu-list,.menu-link{
+    list-style:none;
+    text-decoration:none;
+    color:white;
+    padding:3px;
+}
+.bar-button{
+    display: none ;
+}
+.close-button{
+    display: none ;
+}
+.desk-menu .desk-list .menu-list .menu-link:hover{
+    border-bottom:3px solid white ;
+    font-size:30px;
+    font-weight:1000;
+}
+
+.content{
+    display :flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    background: brown;
+    padding:50px 0 100px 0;
+}
+.content .content-title{
+    color: orange;
+    font-size:26px;
+    padding: 10px;
+    text-align:center;
+}
+.content .content-subtitle{
+    font-family:san;
+    color: orange;
+    font-size:24px;
+    padding: 10px;
+    text-align:center;
+}
+.content-2-subtitle{
+    color: white ;
+    font-size:20px;
+    padding:10px;
+    text-align:center;
+} 
+.content-para{
+    color: white ;
+    font-size:18px;
+    padding: 10px;
+    text-align:center;
+}
+.content button{
+   padding:15px;
+   border-radius:40%;
+   background: orange;
+   color:white;
+   outline:none;
+   border:none;
+   font-size:18px
+}
+
+.img{
+    width:100% ;
+    padding-left:10px;
+}
+.content .contact-btn{
+    background: transparent;
+    border:2px solid white;
+}
+.content .order-btn:hover{
+    background: transparent;
+    border:2px solid white;
+}
+.content .contact-btn:hover{
+    background: orange;
+    border:2px solid transparent;
+}    
+content-para::before{
+    content :"";
+    position :absolute;
+    width: 100%;
+    height: 59px;
+    backdrop-filter:blur(10px);
+}
+
+
+/* section about design */
+
+.section-about{
+    background: whitesmoke;
+    padding: 10px;
+}
+.section-about .content-2{
+    display :flex;
+    flex-direction:row-reverse;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.section-about .content-about{
+    width: 50%;
+    padding :100px 0 0 0;
+    display :flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.content-about .title-about{
+    font-size:30px;
+    text-align:center;
+    border-bottom:4px solid orange;
+}
+.content-about .para-about{
+    font-size:20px;
+    display :flex;
+    justify-content:center;
+    text-align:center;
+    line-height:2;
+    padding :3px;
+}
+.content-about .icon{
+    display:flex;
+    gap:10px;
+    padding:0;
+    list-style:none;
+    color:black;
+}
+.section-about .content-2-img{
+    width: 50%;
+    padding :20px;
+}
+.img-about{
+    width:100%; 
+    border-radius:50%;
+    padding :10px; 
+}
+
+
+
+/* section for recipe */
+
+.section-recipe{
+    background: black;
+    color:white;
+}
+.recipe .recipe-title{
+    display:inline-block;
+    text-align:center;
+    font-size:42px;
+    padding :10px;
+    border-bottom:4px solid orange;
+    margin-bottom:50px;
+}
+.recipe .recipe-list{
+    display :flex;
+    flex-wrap:wrap;
+    justify-content :space-between ;
+    gap:70px;
+    
+}
+.recipe .recipe-list .recipe-block{
+    width: calc(100% / 3 - 70px);
+    display :flex;
+    flex-direction :column ;
+    justify-content :space-between ;
+    text-align:center;
+    font-size:24px;
+    font-weight:bold;
+    gap:50px;
+}
+
+.recipe .recipe-list .recipe-block .menu-img{
+    width: 100%;
+}
+
+
+/* testimonails content  */
+
+
+.section-testimonails{
+    background:whitesmoke;
+    display :flex;
+    position :sticky ;
+    margin:0;
+}
+.section-testimonails  .swiper .swiper-title{
+    font-size:42px;
+    text-decoration:underline;
+    text-decoration-color:orange;    
+    padding:10px 0 20px 0;
+    margin:10px 0 20px 0;
+    font-weight :700;
+}
+.swiper .swiper-wrapper .swiper-slide img{
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    padding:5px;
+}
+.swiper .swiper-wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:5px;
+    gap:5px;
+}
+
+.swiper .swiper-wrapper .swiper-slider img,.user,.feedback{
+    margin-bottom:10px;
+    padding:10px 0 10px 0;
+    font-size:24px;
+    line-height:1.2;
+}
+.section-testimonails  .swiper .prev{
+  color: orange ;
+}
+.section-testimonails .swiper .next{
+    color: orange ;
+}
+.section-testimonails .swiper .next{
+    color: orange ;
+}
+.section-testimonails  .swiper .prev:hover{
+  color: black ;
+}
+.section-testimonails .swiper .next:hover{
+    color:black ;
+}
+
+
+
+/* Contact  section*/
+
+.section-contact .contact-title{
+    text-decoration:underline;
+    text-decoration-color: orange ;
+}
+
+.form{
+    display:flex;
+    gap:40px;
+    flex-direction:column;
+}
+.form input{
+    height:45px;
+}
+.submit-btn{
+    width: 150px;
+    height: 30px;
+}
+
+/* footer  */
+.footer{
+    background: black;
+    color:white;
+}
+.footer .inner-footer{
+    width: 100%;
+    font-size:22px;    
+    display :flex;
+    justify-content:space-between;
+    color:white;
+    padding :10px;
+}
+.footer .footer-icon{
+    display :flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    padding:10px;
+    font-size:40px;
+}
+
+/*responsive design*/
+    
+
+@media screen and (max-width:736px){
+
+.desk-container{ 
+    display :flex;
+    padding:3px;
+    }
+.desk-container .desk-title .desk-subtitle h1{
+     font-size:24px;
+     font-weight:bold;
+     
+ }
+.desk-menu .desk-list{
+     gap:2px;
+     font-size:18px;
+     padding:0;
+ }
+.desk-menu .desk-list .menu-list .menu-link:hover{
+    border-bottom:3px solid white ;
+    font-size:19px;
+    font-weight:700;
+}
+
+
+}
+
+
+@media screen and (max-width:380px){
+
+body.menu-bar .desk-site::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width: 100%;
+    backdrop-filter:blur(5px);
+}
+
+.desk-container{
+    padding :3px;
+    background:brown;
+}
+
+.desk-container .desk-title .desk-subtitle h1{
+    font-size:32px;
+    
+}  
+.desk-menu .desk-list{
+    background:pink;    
+    position :absolute;
+    left:-300px;
+    top:0;
+    width: 300px;
+    height:1000px;
+    display :block;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;  
+    gap:10px;  
+    transition:1s;
+    z-index:1;
+}
+.desk-menu .desk-list .menu-list,.menu-link{
+     color:black;
+     padding:30px;
+}
+.desk-menu .desk-list .menu-list .menu-link:hover{
+    border-bottom:3px solid black ;
+    font-size:20px;
+    font-weight:1000;
+}
+.bar-button{
+    display:block;
+    font-size:26px;
+    padding :5px;
+    background:transparent;
+    border: none ;
+}
+.close-button{
+    display:block;
+    font-size:26px;
+    padding :5px;
+    background: transparent;
+    border:none;
+    position :absolute ;
+    top:6px;
+    right:10px;
+    color:red;
+    animation :blink 0.9s ease 1000;
+}
+body.menu-bar .desk-menu .desk-list{
+    left:0;
+    z-index:1;
+} 
+@keyframes blink{
+    0%{
+      font-size:26px;
+    }
+    100%{
+        font-size:30px;
+    }
+    
+}
+.content{
+    padding: 10px;
+}
+.section-content .content{
+    display:flex;
+    flex-direction:column-reverse;
+}
+.sub-content .content-title{
+    font-size:24px;
+}
+.sub-content .content-subtitle{
+    font-size:22px;
+}
+
+
+
+/* About content in responsive */
+
+
+.section-about .content-2{
+    display:flex;
+    flex-direction:column;    
+}
+.content-2 .content-about{
+    width: 100%;
+    padding:10px;
+}
+.content-2 .content-about .title-about{
+    padding:15px;
+    margin-top:15px;
+}
+.content-about .para-about{
+    padding:10px;
+    
+}
+.content-2 .content-2-img{
+    width: 100%;
+}
+
+
+
+/* Recipe content  */
+.section-recipe .content-recipe .recipe .recipe-list .recipe-block {
+   width: 100%;
+   border-bottom:4px solid whitesmoke;
+}
+.section-recipe .content-recipe .recipe .recipe-title{
+    padding:10px;
+    margin-top:30px;
+}
+
+
+/* footer */
+
+.footer .inner-footer{
+    width: 100%;
+    font-size:10px;
+    font-weight:1000;
+    background: black;
+    display :flex;
+    justify-content:space-between;
+    color:white;
+}
+.footer .footer-icon{
+    display :flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    font-size:20px;
+    padding:10px;
+}
+
+
+
+}
+
+
+
+
+
